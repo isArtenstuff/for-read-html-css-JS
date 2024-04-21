@@ -1,0 +1,296 @@
+.BG {
+    width: 300px;
+    height: 200px;
+    background-image: url(../IMG/BG.jpg);
+    background-repeat: no-repeat;
+    background-color: aqua;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* Background */
+
+/* border 
+    dotted-จุด
+    dashed-ขีด
+    solid-เส้นปกติ
+    double-2ขีด
+    3D
+    groove-กรอบรูป
+    ridge-คล้ายๆgroove
+    inset-สว่างขวากับล่าง
+    outset-สว่างซ้ายกับบน
+    none-ไม่มีเส้น
+    hidden-ซ่อน
+*/
+
+/* Box */
+
+.Box {
+    /* play with margin ระยะภายนอก */
+    /* play with padding ระยะภายใน */
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 3px solid green;
+    color: white;
+
+    margin-top: 0;
+    /*ดันลง*/
+    margin-right: 0;
+    /*ดันไปซ้าย*/
+    margin-bottom: 0;
+    /*ดันขึ้น*/
+    margin-left: 0;
+    /*ดันไปขวา*/
+    margin: 0 0 0 0;
+    /*บน ซ้าย ล่าง ขวา*/
+    margin: 0 0 0;
+    /*บน ข้างๆ2ฝั่ง ล่าง*/
+    margin: 0 0;
+    /*แนวตั้ง แนวนอน*/
+    margin: 0 auto;
+    /*เอาไว้จัดกึ่งกลางบนล่าง0ซ้ายวาauto*/
+
+    padding-top: 0;
+    /*ดันลง*/
+    padding-right: 0;
+    /*ดันไปซ้าย*/
+    padding-bottom: 0;
+    /*ดันขึ้น*/
+    padding-left: 0;
+    /*ดันไปขวา*/
+    padding: 0 0 0 0;
+    /*บน ซ้าย ล่าง ขวา*/
+    padding: 0 0 0;
+    /*บน ข้างๆ2ฝั่ง ล่าง*/
+    padding: 0 0;
+    /*แนวตั้ง แนวนอน*/
+    padding: 0 auto;
+    /*เอาไว้จัดกึ่งกลางบนล่าง0ซ้ายวาauto*/
+}
+
+/* Display */
+
+.display {
+    background-color: red;
+    display: inline;
+}
+
+/* Use to change elements */
+span {
+    background-color: green;
+    display: block;
+}
+
+.visibility {
+    visibility: hidden;
+}
+
+/* Gone but leave its space */
+.hidden {
+    display: none;
+}
+
+/* Gone and don't leave anything behind */
+
+
+/* To use width & Max-width */
+
+.width {
+    width: 500px;
+    border: 2px solid green;
+}
+
+/* Normal */
+.max-width {
+    max-width: 500px;
+    border: 2px solid red;
+}
+
+/* to re-size in web */
+
+/* To understand position 
+    CSS-position
+    -static= same place
+    -relative= move folow command
+    -fixed= locked but its place follow command, (use with tab in port)
+    -absolute=
+    -sticky= like fixed but it'll move until to its place
+*/
+
+.Po {
+    width: 300px;
+    height: 20px;
+    border: 2px solid aquamarine;
+    position: static;
+    top: 100px;
+}
+
+.absolute {
+    width: 300px;
+    height: 150px;
+    border: 2px solid orange;
+    position: relative;
+}
+
+.child {
+    width: 100px;
+    height: 50px;
+    border: 2px solid red;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* Use with relative while relative is big box,and absolute is small box */
+
+
+/* Z index */
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border: 2px solid black;
+    position: relative;
+    top: 50px;
+    z-index: 2;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background: green;
+    border: 2px solid black;
+    z-index: 1;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background: purple;
+    border: 2px solid black;
+    position: relative;
+    top: -40px;
+    z-index: -1;
+}
+
+/* Use z-index to arrange in order, (fixed layer) 
+can not use layer 0
+*/
+
+/* Overflow 
+    visible= Default
+    hiden= To hidden the information
+    scroll= Add a scroll to read all the information
+    auto= works like (scroll), but it'll add scroll when necssary
+*/
+
+.overflow {
+    width: 300px;
+    height: 150px;
+    border: 2px solid black;
+    overflow: scroll;
+}
+
+/* float */
+
+header {
+    height: 60px;
+    background: #ccc;
+}
+
+section {
+    width: 40%;
+    float: left;
+    height: 300px;
+    background: #ddd;
+}
+
+aside {
+    width: 40%;
+    float: right;
+    height: 300px;
+    background: rgb(75, 75, 75);
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    height: 60px;
+    background: green;
+}
+
+/* When it has a problem you can fix its by add a new class to footer ,or use soodle elements*/
+
+/* Use overflow to fix buck */
+
+.overflow-fix-buck {
+    border: 2px solid black;
+    overflow: auto;
+}
+
+img {
+    float: right;
+}
+
+/* This overflow will help to organie the img in to the box */
+
+/* 
+
+    CSS - Combinators
+    
+    - Descendant Selector (space)
+    - Child Selector (>)
+    - Adjacent Sibling Selector (+)
+    - General Sibling Selector (ตัวหนอน)
+*/
+/* + = choose only tag that next to the class or id we use
+ตัวหนอน  = choose every tag that next to the class or id we use
+*/
+.Combinators+p {
+    background: yellow;
+}
+
+
+/* 
+    : Pseudo-classes
+    ::Pseudo-elements
+    : = ใช้กับclassใช้hoverได้และอีกหลายๆอย่าง
+    :: = 
+*/
+
+.Pseudo-classes {
+    width: 100px;
+    height: 100px;
+    background: black;
+}
+
+.Pseudo-classes:hover {
+    background: red;
+}
+
+/* Pseudo-classes and elements is in another files */
+
+
+/* Box-sizing */
+
+.Box-sizing {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* 
+    CSS Specificity(ลำดัความสำคัญ)
+
+    - Inline style - <header style="color: #000;"></header>
+    - IDs - #content
+    - Classes, attributtes and Pseudo-classes - :hover, :focus etc.
+    - Elements and Pseudo-elements - such as h1, div, :before and :after.
+*/

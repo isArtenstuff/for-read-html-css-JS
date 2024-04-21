@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fist HTML</title>
+    <style>
+        /* table */
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        /*list*/
+        ul {
+            list-style-type: disc;
+        }
+
+        /*list style type: disc squar circle*/
+
+        /*Block element and inline element*/
+        div {
+            background-color: aqua;
+        }
+
+        a {
+            background-color: orangered;
+            color: black;
+        }
+
+        /*class and id*/
+
+        .box {
+            background-color: black;
+            color: white;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        /* ID */
+
+        #myId {
+            width: 500px;
+            height: 300px;
+            background-color: red;
+        }
+
+        .box1 {
+            margin: 5px;
+            width: 300px;
+            height: 150px;
+            background-color: green;
+        }
+
+        /* HTML sematics elements */
+        body {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        header {
+            height: 50px;
+            background-color: red;
+        }
+
+        nav {
+            height: 25px;
+            background-color: green;
+        }
+
+        section {
+            float: left;
+            width: 180px;
+            height: 100px;
+            background-color: purple;
+        }
+
+        aside {
+            float: left;
+            width: 320px;
+            height: 100px;
+            background-color: salmon;
+        }
+
+        footer {
+            clear: both;
+            height: 50px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HTML Formatting Elements-->
+    <b>HTML</b><!--Bold text-->
+    <br>
+    <strong>HTML</strong><!--Strong text-->
+    <br>
+    <i>HTML</i><!--Italic text-->
+    <br>
+    <em>HTML</em><!--Emphasized text-->
+    <br>
+    <mark>HTML</mark><!--Marked text-->
+    <br>
+    <small>HTML</small><!--Small text-->
+    <br>
+    <del>HTML</del><!--Delete text-->
+    <br>
+    <ins>HTML</ins><!--Inseted text-->
+    <br>
+    <b>HTML</b>
+
+    <sub>HTML</sub><!--Subscript text-->
+    <sup>HTML</sup><!--Superscript text-->
+    <br><br>
+
+    <!--Links and Images-->
+
+    <br><br>
+    <a title="Go to IG" href="https://www.instagram.com/aartxtt_/" target="_blank">Click to go to my IG</a>
+    <!--target _blank = open new tab-->
+    <!--title = small text when the mouse cover the link-->
+    <br><br>
+    <img src="../IMG/Ig_logo.jpg" alt="">
+    <br><!--push img-->
+    <br><br>
+    <a href="https://www.instagram.com/aartxtt_/" target="_blank"><img src="../IMG/Ig_logo.jpg"
+            alt=""></a><!--push link in image-->
+    <br><br>
+
+    <!--Table-->
+
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+
+        <tr>
+            <td>Pathomphum</td>
+            <td>Srijan</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Sittichai</td>
+            <td>Supasorn</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Suchittra</td>
+            <td>Saengmu</td>
+            <td>18</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <!--List-->
+
+    <ul>
+        <li>List item1</li>
+        <li>List item2</li>
+        <li>List item3</li>
+        <li>List item4</li>
+        <li>List item5</li>
+    </ul><!--begin with spotted first-->
+    <ol>
+        <li>List item1</li>
+        <li>List item2</li>
+        <li>List item3</li>
+        <li>List item4</li>
+        <li>List item5</li>
+    </ol><!--Begin with number first-->
+    <br><br>
+
+    <!--Form-->
+
+    <form>
+        <fieldset>
+            <legend>
+                Register form
+            </legend>
+            <label for="Firstname">Firstname</label>
+            <input type="text" placeholder="Enter your firstname ...">
+            <br>
+            <label for="Lastname">Lastname</label>
+            <input type="text" placeholder="Enter your Lastname ...">
+            <br>
+            <label for="gener">Select Gender :</label>
+            <input type="radio" name="gender" value="male" checked>Male
+            <input type="radio" name="gender" value="Female">Female
+            <br>
+            <input type="checkbox" value="value1" name="value1">Cheackbox1
+            <input type="checkbox" value="value2" name="value2">Cheackbox2
+            <input type="checkbox" value="value3" name="value3">Cheackbox3
+            <br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form><!--type text = input text, radio = choose only one, checkbox = can choose more than one -->
+
+    <!--Block element and Inline elemant-->
+    <!--Block element = line by line-->
+    <!--Inline element = more than one in same line-->
+
+    <div>This is a block elemans</div>
+    <div>This is a block elemans</div>
+    <a href="#">This is a inline element</a>
+    <a href="#">This is a inline element</a>
+    <a href="#">This is a inline element</a>
+
+    <!--Class and Id-->
+
+    <div class="box">
+        <h2>This is a box 1</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box center">
+        <h2>This is a box 1</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box">
+        <h2>This is a box 1</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <br><br>
+
+    <!--ID-->
+
+    <div id="myId"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+
+    <!--iframe-->
+
+    <iframe src="iframe.html" width="640" height="360" frameborder="1"></iframe>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/P2y-C4sQfCc?si=AlT_wf2mFBFEjlk_"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!--HTML Entities
+    Result	    Description	            Name	Number	
+                non-breaking space      &nbsp;  &#160;	
+    <	        less than	            &lt;	&#60;	
+    >	        greater than	        &gt;	&#62;	
+    &	        ampersand	            &amp;	&#38;	
+    "	        double quotation mark	&quot;	&#34;	
+    '	        single quotation mark	&apos;	&#39;	
+    ¢	        cent	                &cent;	&#162;	
+    £	        pound	                &pound;	&#163;	
+    ¥	        yen	                    &yen;	&#165;	
+    €	        euro	                &euro;	&#8364;	
+    ©	        copyright	            &copy;	&#169;	
+    ®	        trademark	            &reg;	&#174;-->
+
+    <p>
+        this is how to use html entity : example &lt;p&gt;
+        Pathomphum &amp; Srijan
+    </p>
+
+    <!--HTML5 Sematics Elements
+        <article>
+        <aside>
+        <details>
+        <figcaption>
+        <figure>
+        <footer>
+        <header>
+        <main>
+        <mark>
+        <nav>
+        <section>
+        <summary>
+        <time> -->
+
+    <header>
+        Header
+    </header>
+    <nav>
+        Nav
+    </nav>
+    <section>
+        Section
+    </section>
+    <aside>
+        Aside
+    </aside>
+    <footer>
+        Footer
+    </footer>
+
+    <!--End of HTML-->
+</body>
+
+</html>

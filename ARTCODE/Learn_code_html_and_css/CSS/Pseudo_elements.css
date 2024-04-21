@@ -1,0 +1,12 @@
+/* p::first-line {
+    font-size: 36px;
+    color: aqua;
+} */
+
+p::before {
+    content: "This is inserted from ::before =>";
+}
+
+p::after {
+    content: "<= This is inserted from ::after";
+}
